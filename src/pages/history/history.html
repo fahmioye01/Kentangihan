@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar color="biru">
+    <ion-title>history</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <ion-grid >
+        <ion-item  color="biru" >
+            <ion-row>
+                <ion-col >Nama</ion-col>
+                <ion-col width-25>Harga</ion-col>
+                <ion-col width-25>Tanggal</ion-col>
+              </ion-row>
+            </ion-item>
+        <ion-item>
+         <ion-row   *ngFor = "let item of nota2 | async"   >
+            <ion-col col-2>{{item.nama}}</ion-col>
+                <ion-col col-2 class="history" col-2>{{item.jumlah}}</ion-col>
+                <ion-col col-2 class="tgl" col-2>{{item.myDate.substr(0,10)}}</ion-col>
+              
+              <ion-col col-2 >
+                  <ion-icon class="ikon" name="trash" (click)="hapus(item)" ></ion-icon>
+                </ion-col>
+             
+            </ion-row>
+          </ion-item>
+        </ion-grid>
+</ion-content>

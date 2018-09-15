@@ -1,0 +1,107 @@
+<!--
+  Generated template for the PesanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="biru">
+    <ion-title>Pesan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list   >
+     <!-- <ion-item *ngFor="let item of arrMenu ">
+          <ion-label> {{item.menu}}</ion-label>
+          <ion-input type="number" [(ngModel)]="angka"  ></ion-input>
+         </ion-item>-->
+
+      <ion-item >
+      <div class="ping"> Rendang :
+        <div calss="icon">
+        <ion-icon name="ios-remove-circle-outline"  (click)="kurangRendang()"></ion-icon>
+        <div class="tengah"> {{rendang}}</div>
+         <ion-icon name="ios-add-circle-outline" (click)="tambahRendang()"></ion-icon>
+        </div>
+      </div>
+
+      </ion-item>
+
+    <ion-item >
+      <div class="ping">
+      Barbeque :
+      <div calss="icon">
+     <ion-icon name="ios-remove-circle-outline" (click)="decrement()"></ion-icon>
+     <div class="tengah"> {{barbe}}</div>
+      <ion-icon name="ios-add-circle-outline" (click)="increment()"></ion-icon>
+      </div>
+      </div>
+    </ion-item>
+
+    <ion-item >
+      <div class="ping">
+      Keju :
+      <div calss="icon">
+      <ion-icon name="ios-remove-circle-outline" (click)="kurangKeju()"></ion-icon>
+      <div class="tengah">{{keju}}</div>
+       <ion-icon name="ios-add-circle-outline" (click)="tambahKeju()"></ion-icon>
+       </div>
+       </div>
+     </ion-item>
+
+     <ion-item  >
+      <div class="ping"> 
+      Blackpepper :
+      <div calss="icon">
+      <ion-icon name="ios-remove-circle-outline" (click)="kurangBp()"></ion-icon>
+      <div class="tengah"> {{bp}} </div>
+       <ion-icon name="ios-add-circle-outline" (click)="tambahBp()"></ion-icon>
+       </div>
+       </div>
+     </ion-item>
+
+   
+  </ion-list>
+
+  <ion-item >
+    <ion-label class="black" > Nama :</ion-label>
+    <ion-input type="text"  [(ngModel)]="nama" placeholder="Nama" ></ion-input>
+   </ion-item>
+
+  <button ion-button full (click)="coba()" >pesan</button>
+
+ 
+  <!--<ion-list>
+    <ion-item>
+      <ion-label>Pilih Pesanan :</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>{{Pesan}}</ion-label>
+      <ion-input type="number" max="10"></ion-input> .
+    </ion-item>
+    <ion-item>
+        <ion-label>Cheese :</ion-label>
+        <ion-input type="number" max="10"></ion-input> .
+      </ion-item>
+      <ion-item>
+          <ion-label>BBQ :</ion-label>
+          <ion-input type="number" max="10"></ion-input> .
+        </ion-item>
+        <ion-item>
+          <ion-label>Black Pepper :</ion-label>
+          <ion-input type="number" max="10"></ion-input> .
+        </ion-item>   
+
+        <h5>Nama :</h5>
+        <ion-item>
+          <ion-input type="text" placeholder="Nama" ></ion-input>
+        </ion-item>
+  </ion-list>-->
+
+ 
+
+</ion-content>
